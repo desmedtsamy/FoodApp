@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/connexionFragment">
+    <fragment
+        android:id="@+id/fragment_add"
+        android:name="esi.g52854.projet.fragment.add.AddFragment"
+        android:label="créer une recette"
+        tools:layout="@layout/fragment_add" />
+    <fragment
+        android:id="@+id/connexionFragment"
+        android:name="esi.g52854.projet.fragment.connexion.ConnexionFragment"
+        android:label="@string/about_title"
+        tools:layout="@layout/fragment_connexion" />
+    <fragment
+        android:id="@+id/listFragment"
+        android:name="esi.g52854.projet.fragment.list.ListFragment"
+        android:label="liste des recettes"
+        tools:layout="@layout/fragment_list" />
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="esi.g52854.projet.fragment.detail.DetailFragment"
+        android:label="recette" />
+    <fragment
+        android:id="@+id/fragment_offline"
+        android:name="esi.g52854.projet.fragment.FragmentOffline"
+        android:label="fragment_offline"
+        tools:layout="@layout/fragment_offline" />
+</navigation>
